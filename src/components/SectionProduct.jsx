@@ -8,7 +8,7 @@ const SectionProduct = () => {
    
 
     const cargarProductos = async() => {
-        const request = await fetch('http://localhost:3000/api/v1/products');
+        const request = await fetch('http://localhost:3030/api/products');
         const response = await request.json();
 
         const {products} = response.data;

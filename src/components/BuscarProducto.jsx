@@ -14,7 +14,7 @@ const BuscarProducto = () => {
 
     const getProductByName = async(name) => {
        
-        const request = await fetch(`http://localhost:3000/api/v1/products/${name}`);
+        const request = await fetch(`http://localhost:3030/api/products/name`);
         const response = await request.json();
 
         const {product} = response.data;
