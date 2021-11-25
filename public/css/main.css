@@ -1,0 +1,32 @@
+body {
+    background-color: whitesmoke;
+}
+
+ul.list-item {
+    padding: 0;
+    list-style-type: none;
+    background-color: white;
+    margin: 2rem;
+    box-shadow:4px 4px 4px gray;
+}
+
+ul.list-item li {
+    height: 5rem;
+    border-style: solid;
+    border: 0.25px solid grey;
+}
+
+.list-item-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4px
+}
+
+ul.list-item li p{
+    display: inline;
+}
+
+ul.list-item li img{
+    float:right
+}
