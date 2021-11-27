@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
-import DetalleProducto from './DetalleProducto';
+import DetalleUsuario from './DetalleUsuario';
 
-const BuscarProducto = () => {
+const BuscarUsuario = () => {
 
     const [nombre, setNombre] = useState("")
-    const [product, setProduct] = useState(null)
+    const [user, setUser] = useState(null)
 
     const handleOnChange = (event)=> {
 
@@ -12,24 +12,24 @@ const BuscarProducto = () => {
         setNombre(event.target.value);
     }
 
-    const getProductByName = async(name) => {
+    const getUserById = async(name) => {
        
-        const request = await fetch(`http://localhost:3030/api/products/name`);
+        const request = await fetch(`http://localhost:3030/api/user/:id`);
         const response = await request.json();
 
-        const {product} = response.data;
-        setProduct(product);
+        const {user} = response.data;
+        setUser(user);
     }
 
     const handleOnSubmit = (event) => {
         event.preventDefault();
-        getProductByName(nombre);
+        getUserById(nombre);
     }
 
     return (
         <div>
            <form onSubmit={handleOnSubmit}>
-                <label htmlFor="name">id del producto</label>
+                <label htmlFor="name">id del usuario</label>
                 <input 
                     type="text" 
                     name="name" 
@@ -41,12 +41,12 @@ const BuscarProducto = () => {
                 <button type="submit">Buscar</button>   
             </form> 
             <section>
-                { product === null? 
-                    <p style={{color:'red'}}>No se encontro producto</p>
+                { user === null? 
+                    <p style={{color:'red'}}>No se encontro Usuario</p>
                     :
                     <div>
                         <h3>Detalle</h3>
-                        <DetalleProducto product={product}/>
+                        <DetalleUsuario user={user}/>
                     </div>
                     
                 }
@@ -55,4 +55,4 @@ const BuscarProducto = () => {
     )
 }
 
-export default BuscarProducto
+export default BuscarUsuario

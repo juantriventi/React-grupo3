@@ -1,4 +1,5 @@
 import React from 'react'
+import ProductListItem from './ProductListItem';
 
 function ListaProductos(props) {
 
@@ -11,9 +12,9 @@ return (
     productos.length === 0?
     <h3>No hay productos cargados</h3>
     :
-    <ul>
-        { productos.map(product => (
-        <li key={product.id}>{product.name}</li>)
+    <ul className='list-item'>
+        { productos.map(product => 
+            <ProductListItem key={product.id} producto={product} />
         )}
     </ul>
     }
