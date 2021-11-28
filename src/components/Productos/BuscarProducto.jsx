@@ -14,11 +14,14 @@ const BuscarProducto = () => {
 
     const getProductByName = async(name) => {
        
-        const request = await fetch(`http://localhost:3030/api/products/name`);
+        const request = await fetch(`http://localhost:3030/api/products/name/` + nombre);
         const response = await request.json();
-
+        if (response.data.message.includes("No se encontro producto")){
+            const product = {name:"sin producto"}
+        }else{ 
         const {product} = response.data;
         setProduct(product);
+    }
     }
 
     const handleOnSubmit = (event) => {
@@ -55,4 +58,4 @@ const BuscarProducto = () => {
     )
 }
 
-export default BuscarProducto
+export default BuscarProducto;

@@ -1,6 +1,6 @@
 import React from 'react'
-import SectionProduct from './SectionProduct'
-import SectionUsers from './SectionUsers'
+import SectionProduct from './Productos/SectionProduct'
+import SectionUsers from './Usuarios/SectionUsers'
 
 
 const Dashboardcontainer = () => {

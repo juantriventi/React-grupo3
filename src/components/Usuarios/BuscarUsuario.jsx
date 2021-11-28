@@ -14,7 +14,7 @@ const BuscarUsuario = () => {
 
     const getUserById = async(name) => {
        
-        const request = await fetch(`http://localhost:3030/api/user/:id`);
+        const request = await fetch(`http://localhost:3030/api/users/id`);
         const response = await request.json();
 
         const {user} = response.data;

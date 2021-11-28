@@ -25,13 +25,17 @@ const SectionProduct = () => {
     return (
         <div>
             <section>
+                <h2>Busqueda</h2>
+                <div className='m-4 card '>
+                    <BuscarProducto />
+                </div>
+                
+            </section>
+            <section>
                 <h2>Productos</h2>
                 <ListaProductos productos={productos}/>
             </section>
-            <section>
-                <h2>Busqueda</h2>
-                <BuscarProducto />
-            </section>
+           
         </div>
     )
 }

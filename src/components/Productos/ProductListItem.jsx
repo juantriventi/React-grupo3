@@ -7,7 +7,7 @@ const ProductListItem = (props)=> {
     return (
       <li>
           <div className='list-item-container'>
-            <p>Nombre: <span>{name}</span></p>
+            <p><span>{name}</span></p>
             <img src={image} alt={name} width={50} />
           </div>
         

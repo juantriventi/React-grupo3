@@ -42,3 +42,56 @@ ul.list-item li img{
     monospace;
 }
    */
+   .card {
+    background-color: white;
+    padding: 0.8rem;
+    width: 40%;
+    border: 0.25px solid grey;
+    box-shadow:4px 4px 4px gray;
+}
+
+.m-1 {
+    margin: 0.4rem;
+}
+
+.m-2 {
+    margin: 0.8rem;
+}
+
+.m-3 {
+    margin: 1.2rem;
+}
+
+.m-4 {
+    margin: 1.6rem;
+}
+
+ul.list-item {
+    padding: 0;
+    list-style-type: none;
+    background-color: white;
+    margin: 2rem;
+    box-shadow:4px 4px 4px gray;
+}
+
+ul.list-item li {
+    height: 5rem;
+    border-style: solid;
+    border: 0.25px solid grey;
+}
+
+.list-item-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4px
+}
+
+ul.list-item li p{
+    font-weight: bolder;
+    display: inline;
+}
+
+ul.list-item li img{
+    float:right
+}
