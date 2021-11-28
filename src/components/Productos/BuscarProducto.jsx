@@ -33,7 +33,7 @@ const BuscarProducto = () => {
     return (
         <div>
            <form onSubmit={handleOnSubmit}>
-                <label htmlFor="name">id del producto</label>
+                <label htmlFor="name">Nombre del producto</label>
                 <input 
                     type="text" 
                     name="name" 
