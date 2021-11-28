@@ -8,10 +8,9 @@ const Dashboardcontainer = () => {
         <div>
             <section>
                 <SectionProduct/>
+                
             </section>
-            {/* <section>
-                <SectionUsers/>
-            </section> */}
+            
         </div>
 
         

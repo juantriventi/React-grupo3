@@ -8,20 +8,21 @@ const BuscarProducto = () => {
 
     const handleOnChange = (event)=> {
 
-        console.log(event.target.value);
         setNombre(event.target.value);
     }
 
     const getProductByName = async(name) => {
        
-        const request = await fetch(`http://localhost:3030/api/products/name/` + nombre);
+        const request = await fetch(`http://localhost:3030/api/products/name/${nombre}` );
         const response = await request.json();
-        if (response.data.message.includes("No se encontro producto")){
-            const product = {name:"sin producto"}
-        }else{ 
-        const {product} = response.data;
+        console.log(response)
+        let product = null;
+
+        if(!response.message.includes('ERROR')){
+           product = response.data.product;
+        }
+        
         setProduct(product);
-    }
     }
 
     const handleOnSubmit = (event) => {

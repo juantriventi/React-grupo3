@@ -1,5 +1,5 @@
 body {
-    background-color: whitesmoke;
+    background-color: #ebebeb;
     /* margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -8,34 +8,7 @@ body {
     -moz-osx-font-smoothing: grayscale; */
 }
 
-ul.list-item {
-    padding: 0;
-    list-style-type: none;
-    background-color: white;
-    margin: 2rem;
-    box-shadow:4px 4px 4px gray;
-}
 
-ul.list-item li {
-    height: 5rem;
-    border-style: solid;
-    border: 0.25px solid grey;
-}
-
-.list-item-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 4px
-}
-
-ul.list-item li p{
-    display: inline;
-}
-
-ul.list-item li img{
-    float:right
-}
   
 /* code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -45,9 +18,10 @@ ul.list-item li img{
    .card {
     background-color: white;
     padding: 0.8rem;
-    width: 40%;
-    border: 0.25px solid grey;
-    box-shadow:4px 4px 4px gray;
+    width: 30%;
+    border: 0.25px solid rgb(0, 0, 0);
+    box-shadow:4px 4px 4px rgb(109, 109, 109);
+    border-radius: 2%;
 }
 
 .m-1 {
@@ -67,24 +41,23 @@ ul.list-item li img{
 }
 
 ul.list-item {
-    padding: 0;
+    width: 40%;
+    padding: 5px;
     list-style-type: none;
     background-color: white;
     margin: 2rem;
     box-shadow:4px 4px 4px gray;
+    border-radius: 2%;
+    border: 0.25px solid rgb(0, 0, 0);
 }
 
-ul.list-item li {
-    height: 5rem;
-    border-style: solid;
-    border: 0.25px solid grey;
-}
+
 
 .list-item-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 4px
+    margin: 10px
 }
 
 ul.list-item li p{
