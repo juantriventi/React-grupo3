@@ -7,12 +7,21 @@ const Dashboardcontainer = () => {
     return (
         <div>
             <section>
+
                 <SectionProduct/>
                 
             </section>
+
+            <section>
+
+                <SectionUsers/>
+
+            </section>
             
         </div>
-
+        
+           
+        
         
     )
 }

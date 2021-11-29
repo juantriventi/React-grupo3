@@ -3,19 +3,23 @@ import UserListItem from './UserListItem.jsx';
 
 function ListaUsuarios(props) {
 
-const {user} = props; 
+const {users, cantidadUsers} = props; 
 
 
 return (
 <>
+<section>
+    <h2>Usuarios</h2>
+
+    <p>Usuarios Registrados <span>{cantidadUsers}</span></p>
     {
-    
     <ul className='list-item'>
-        { user.map(user => 
-            <UserListItem  user={user} />
+        { users.map(user => 
+            <UserListItem key={user.id} user={user} />
         )}
     </ul>
     }
+    </section>
 </>
 )
 }

@@ -12,20 +12,20 @@ const BuscarUsuario = () => {
         setNombre(event.target.value);
     }
 
-    const getUserById = async(name) => {
+    const getUserByName = async(name) => {
        
-        const request = await fetch(`http://localhost:3030/api/users/id`);
+        const request = await fetch(`http://localhost:3030/api/users/name/${name}`);
         const response = await request.json();
 
         const {user} = response.data;
         setUser(user);
     }
 
-    const handleOnSubmit = (event) => {
+     const handleOnSubmit = (event) => {
         event.preventDefault();
-        getUserById(nombre);
+        getUserByName(nombre);
     }
-
+ 
     return (
         <div>
            <form onSubmit={handleOnSubmit}>

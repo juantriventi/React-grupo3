@@ -5,6 +5,7 @@ import ListaProductos from './ListaProductos';
 const SectionProduct = () => {
 
     const [productos, setProductos] = useState([]);
+    const [cantiadProducts, setCantiadProducts] = useState(0);
    
 
     const cargarProductos = async() => {
@@ -12,9 +13,10 @@ const SectionProduct = () => {
         const response = await request.json();
 
         const {products} = response.data;
+        const{total} = response.meta;
        
         setProductos(products);
-        console.log(products);
+        setCantiadProducts(total);
     }
 
     useEffect(() => {
@@ -33,7 +35,7 @@ const SectionProduct = () => {
             </section>
             <section>
                 <h2>Lista de productos</h2>
-                <ListaProductos productos={productos}/>
+                <ListaProductos productos={productos} cantidadProducts={cantiadProducts}/>
             </section>
            
         </div>
