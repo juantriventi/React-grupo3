@@ -8,14 +8,20 @@ const Dashboardcontainer = () => {
     return (
         <div>
             <section>
-                <Header/>                
+                <Header/>                             
             </section>
-            <section>
+            <div className="cont-general">
+            <section className="cont-prod">
                 <SectionProduct/>                
             </section>
-
+            <section className="cont-usuarios">
+                <SectionUsers/>
+            </section>
+            </div>
         </div>
-
+        
+           
+        
         
     )
 }

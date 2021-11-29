@@ -2,7 +2,7 @@ import React from 'react'
 
 const UserListItem = (props)=> {
     
-    const {firstName, lastName, email} = props.usuario
+    const {firstName, lastName, email} = props.user
     
     return (
       <li>

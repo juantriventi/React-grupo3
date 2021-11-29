@@ -4,17 +4,19 @@ import ListaUsuarios from './ListaUsuarios';
 
 const SectionUsers = () => {
 
-    const [usuario, setUsuario] = useState([]);
+    const [users, setUsers] = useState([]);
+    const [cantidadUsers, setcantidadUsers] = useState(0);
    
 
     const cargarUsuario = async() => {
         const request = await fetch('http://localhost:3030/api/users');
         const response = await request.json();
 
-        const {usuario} = response.data;
+        const {total} =  response.meta;
+        const {list} =   response.data;
        
-        setUsuario(usuario);
-        console.log(usuario);
+        setUsers(list);
+        setcantidadUsers(total);
     }
 
     useEffect(() => {
@@ -25,12 +27,13 @@ const SectionUsers = () => {
     return (
         <div>
             <section>
-                <h2>Usuarios</h2>
-                <ListaUsuarios usuario={usuario}/>
+                <ListaUsuarios users={users} cantidadUsers={cantidadUsers}/>
             </section>
             <section>
                 <h2>Busqueda</h2>
+                <div className='card'>
                 <BuscarUsuario />
+                </div>
             </section>
         </div>
     )

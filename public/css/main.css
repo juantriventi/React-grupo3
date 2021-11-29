@@ -4,25 +4,43 @@ body {
     background-color: #ffffff;
     }
 
+.cont-general {
+    display: flex;
+    padding: 30px;
+
+}
+.cont-prod, .cont-usuarios {
+    width: 50%;
+}
 .card {
     background-color: rgb(0, 0, 0);
     padding: 0.8rem;
-    width: 30%;
-    border: 0.25px solid rgb(0, 0, 0);
-    /* box-shadow:4px 4px 4px rgb(109, 109, 109); */
-    border-radius: 5px;
-    color:white
+    color:white;
+    width: 80%;
 }
 .form-prod {
     border-style: none;
     border: 1px solid rgb(255, 255, 255);
-        
+    height: 30px;
 }
+
+.form-prod label {
+    padding: 10px;
+}
+
+.form-prod input {
+        height: 25px;
+    }
+        
+
 .button-prod{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     border-style: none;
-    color: rgb(0, 0, 0);   
+    color: rgb(255, 255, 255);   
     font-size: 14px;
+    font-weight: 700;
+    height: 30px;
+    width: 30%;
 }
 
 .header-cont {
@@ -31,12 +49,12 @@ body {
     height: 80px;
     width: 100%;
     padding: 10px; 
-    justify-content: space-between;
+
    }
    
 .header-logo {
     width: 25%;
-   }
+}
 
 .logo{
     width: 40%;
@@ -44,6 +62,18 @@ body {
     margin-right: 10px;
     margin-left: 30px;
     padding: 0px 10px 10px 15px;
+}
+
+.titulo{
+    display: flex;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.titulo-contador {
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .m-1 {
@@ -63,13 +93,10 @@ body {
 }
 
 ul.list-item {
-    width: 40%;
+    width: 85%;
     padding: 5px;
     list-style-type: none;
     background-color: white;
-    margin: 2rem;
-    box-shadow:4px 4px 4px gray;
-    border-radius: 2%;
     border: 0.25px solid rgb(0, 0, 0);
 }
 
