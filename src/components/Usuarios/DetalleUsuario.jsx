@@ -14,8 +14,8 @@ const DetalleUsuario = (props) => {
 }
 
 const customStyle = {
-    borderStyle:'dashed', 
-    borderColor:'blue'
+    borderStyle:'', 
+    borderColor:''
 }
 
 

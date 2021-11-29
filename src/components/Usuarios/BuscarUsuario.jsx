@@ -29,7 +29,7 @@ const BuscarUsuario = () => {
     return (
         <div>
            <form className='form-prod' onSubmit={handleOnSubmit}>
-                <label htmlFor="name">Id del usuario</label>
+                <label htmlFor="name">Nombre del usuario</label>
                 <input 
                     type="text" 
                     name="name" 
@@ -42,7 +42,7 @@ const BuscarUsuario = () => {
             </form> 
             <section>
                 { user === null? 
-                    <p style={{color:'red'}}>No se encontro Usuario</p>
+                    <p style={{color:'lightgreen'}}>No se encontro Usuario</p>
                     :
                     <div>
                         <h3>Detalle</h3>

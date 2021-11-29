@@ -9,7 +9,7 @@ const colorCantidad = cantidadUsers < 3? 'red' : 'blue';
 return (
 <>
 <section>
-    <h2>Usuarios</h2>
+    
 
     <p className="titulo-contador">USUARIOS REGISTRADOS <span style={{color:colorCantidad, fontSize:30}}>{cantidadUsers}</span></p>
     {

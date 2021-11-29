@@ -27,14 +27,14 @@ const SectionProduct = () => {
     return (
         <div>
             <section>
-                <h2>Buscar producto </h2>
+                <h2>Buscar producto: </h2>
                 <div className='card'>
                     <BuscarProducto />
                 </div>
                 
             </section>
             <section>
-                <h2>Lista de productos</h2>
+                
                 <ListaProductos productos={productos} cantidadProducts={cantiadProducts}/>
             </section>
            

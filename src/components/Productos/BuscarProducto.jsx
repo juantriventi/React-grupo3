@@ -46,7 +46,7 @@ const BuscarProducto = () => {
             </form> 
             <section>
                 { product === null? 
-                    <p style={{color:'red'}}>No se encontro producto</p>
+                    <p style={{color:'lightgreen'}}>No se encontro producto</p>
                     :
                     <div>
                         <h3>Detalle</h3>

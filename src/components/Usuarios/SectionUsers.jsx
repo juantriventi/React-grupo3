@@ -26,14 +26,15 @@ const SectionUsers = () => {
     
     return (
         <div>
+            
             <section>
-                <ListaUsuarios users={users} cantidadUsers={cantidadUsers}/>
-            </section>
-            <section>
-                <h2>Busqueda</h2>
+                <h2>Buscar usuario:</h2>
                 <div className='card'>
                 <BuscarUsuario />
                 </div>
+            </section>
+            <section>
+                <ListaUsuarios users={users} cantidadUsers={cantidadUsers}/>
             </section>
         </div>
     )
