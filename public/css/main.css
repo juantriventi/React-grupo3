@@ -1,17 +1,49 @@
 body {
-    background-color: whitesmoke;
     margin: 0;
     font-family:'Lato', sans-serif;    
-    background-color: #ebebeb;
-}
+    background-color: #ffffff;
+    }
 
-   .card {
-    background-color: white;
+.card {
+    background-color: rgb(0, 0, 0);
     padding: 0.8rem;
     width: 30%;
     border: 0.25px solid rgb(0, 0, 0);
-    box-shadow:4px 4px 4px rgb(109, 109, 109);
-    border-radius: 2%;
+    /* box-shadow:4px 4px 4px rgb(109, 109, 109); */
+    border-radius: 5px;
+    color:white
+}
+.form-prod {
+    border-style: none;
+    border: 1px solid rgb(255, 255, 255);
+        
+}
+.button-prod{
+    background-color: rgb(255, 255, 255);
+    border-style: none;
+    color: rgb(0, 0, 0);   
+    font-size: 14px;
+}
+
+.header-cont {
+    background-color: black;
+    display: flex;
+    height: 80px;
+    width: 100%;
+    padding: 10px; 
+    justify-content: space-between;
+   }
+   
+.header-logo {
+    width: 25%;
+   }
+
+.logo{
+    width: 40%;
+    display: block;
+    margin-right: 10px;
+    margin-left: 30px;
+    padding: 0px 10px 10px 15px;
 }
 
 .m-1 {

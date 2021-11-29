@@ -32,7 +32,7 @@ const BuscarProducto = () => {
 
     return (
         <div>
-           <form onSubmit={handleOnSubmit}>
+           <form className='form-prod' onSubmit={handleOnSubmit}>
                 <label htmlFor="name">Nombre del producto</label>
                 <input 
                     type="text" 
@@ -42,7 +42,7 @@ const BuscarProducto = () => {
                     value={nombre}
                     />
 
-                <button type="submit">Buscar</button>   
+                <button className='button-prod' type="submit">Buscar</button>   
             </form> 
             <section>
                 { product === null? 
